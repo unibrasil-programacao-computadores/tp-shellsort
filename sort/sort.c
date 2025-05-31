@@ -11,36 +11,23 @@ void quicksort(double* arr, long arr_size)
     qsort(arr, arr_size, sizeof(double), compare);
 }
 
-void selectionsort(double* arr, long arr_size)
-{
- int i,j, min;
- double x;
- for(i = 0; i < arr_size-1; i++)
-     {
-     min = i;
-     for(j=i + 1; j < arr_size; j++)
-     {
-         if(arr[j]<arr[min]){
-             min = j;}
- }
-         x = arr[min];
-         arr[min] = arr[i];
-         arr[i] = x;
-}
+void shellsort(double* arr, long arr_size) {
+    int i, j, h;
+    double aux;
 
-void insertionsort(double* arr, long arr_size)
-{
-    int i, j;
-    double x;
+    float k = log(arr_size + 1) / log(3);
+    k = floor(k + 0.5);
+    h = (pow(3, k) - 1) / 2;
 
-    for (i = 2; i <= arr_size; i++) { 
-        x = arr[i];
-        j = i - 1;
-        arr[0] = x;
-        while (x < arr[j]) {  
-            A[j + 1] = A[j];
-            j--;
+    while (h > 0) {
+        for (i = 0; i < arr_size - h; i++) {
+            if (arr[i] > arr[i + h]) {
+                aux = arr[i + h];
+                arr[i + h] = arr[i];
+                arr[i] = aux;
+                j = i - h;
+
+            }
         }
-        A[j + 1] = x;
     }
 }
