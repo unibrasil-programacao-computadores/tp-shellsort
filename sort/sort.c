@@ -14,11 +14,10 @@ void quicksort(double* arr, long arr_size)
 void shellsort(double* arr, long arr_size) {
     int i, j, h;
     double aux;
-
     float k = log(arr_size + 1) / log(3);
     k = floor(k + 0.5);
     h = (pow(3, k) - 1) / 2;
-
+    
     while (h > 0) {
         for (i = 0; i < arr_size - h; i++) {
             if (arr[i] > arr[i + h]) {
@@ -27,7 +26,17 @@ void shellsort(double* arr, long arr_size) {
                 arr[i] = aux;
                 j = i - h;
 
+                while (j >= 0) {
+                    if (aux < arr[j]) {
+                        arr[j + h] = arr[j];
+                        arr[j] = aux;
+                    } else {
+                        break;
+                    }
+                    j = j - h;
+                }
             }
         }
+        h = (h - 1) / 3;
     }
 }
