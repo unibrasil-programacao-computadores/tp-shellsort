@@ -1,5 +1,5 @@
 #include "sort.h"
-
+#include <math.h>
 int compare(const void* a, const void* b)
 {
     double diff =  *(double*)a - *(double*)b;
@@ -17,7 +17,7 @@ void shellsort(double* arr, long arr_size) {
     float k = log(arr_size + 1) / log(3);
     k = floor(k + 0.5);
     h = (pow(3, k) - 1) / 2;
-    
+
     while (h > 0) {
         for (i = 0; i < arr_size - h; i++) {
             if (arr[i] > arr[i + h]) {

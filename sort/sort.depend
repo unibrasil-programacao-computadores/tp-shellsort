@@ -17,11 +17,41 @@
 1746533279 source:c:\projects\programacao-computadores\root\sort\input.c
 	"input.h"
 
-1748666293 source:c:\users\mathe\onedrive\documentos\github\tp-shellsort\sort\input.c
+1748563427 source:c:\users\mathe\onedrive\documentos\github\root\sort\input.c
 	"input.h"
 
-1748666293 c:\users\mathe\onedrive\documentos\github\tp-shellsort\sort\input.h
+1748563427 c:\users\mathe\onedrive\documentos\github\root\sort\input.h
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
+
+1748827981 source:c:\users\mathe\onedrive\documentos\github\root\sort\sort.c
+	"sort.h"
+	<math.h>
+
+1748563431 c:\users\mathe\onedrive\documentos\github\root\sort\sort.h
+	<stdlib.h>
+
+1748828268 source:c:\users\mathe\onedrive\documentos\github\root\sort\main.c
+	"sort.h"
+	"input.h"
+
+1748563427 source:c:\users\mathe\onedrive\documentos\github\tp-shellsort\sort\input.c
+	"input.h"
+
+1748563427 c:\users\mathe\onedrive\documentos\github\tp-shellsort\sort\input.h
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1748828268 source:c:\users\mathe\onedrive\documentos\github\tp-shellsort\sort\main.c
+	"sort.h"
+	"input.h"
+
+1748563431 c:\users\mathe\onedrive\documentos\github\tp-shellsort\sort\sort.h
+	<stdlib.h>
+
+1748827981 source:c:\users\mathe\onedrive\documentos\github\tp-shellsort\sort\sort.c
+	"sort.h"
+	<math.h>
 
