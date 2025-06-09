@@ -14,6 +14,7 @@ void quicksort(double* arr, long arr_size)
 void shellsort(double* arr, long arr_size) {
     int i, j, h;
     double aux;
+
     float k = log(arr_size + 1) / log(3);
     k = floor(k + 0.5);
     h = (pow(3, k) - 1) / 2;
